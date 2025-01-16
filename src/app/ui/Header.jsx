@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useRef } from "react"
+import Link from "next/link"
 
 export default function Header(){
 
@@ -25,16 +26,16 @@ export default function Header(){
                 alt="Menu Hamburguer"
                 />
                 <ul ref={refMenu} className=" transition-[height] transform duration-300 ease-in-out overflow-hidden h-0 flex flex-col items-end w-full mt-1 bg-orange-400  px-3 justify-around">
-                    <li className="font-medium">Viagem</li>
-                    <li className="font-medium">Trabalho</li>
-                    <li className="font-medium">Banco</li>
+                    <li className="font-medium"> <Link href='/trip'>Viagem</Link> </li>
+                    <li className="font-medium"><Link href='/work'>Trabalho</Link></li>
+                    <li className="font-medium"><Link href='/'>Geral</Link></li>
                 </ul>
             </div>
 
             <ul className="hidden lg:flex lg:justify-around lg:w-2/3 mt-4">
-                <li className="font-medium">Viagem</li>
-                <li className="font-medium">Trabalho</li>
-                <li className="font-medium">Banco</li>
+                <li className="font-medium"> <Link href='/trip'>Viagem</Link> </li>
+                <li className="font-medium"><Link href='/work'>Trabalho</Link></li>
+                <li className="font-medium"><Link href='/'>Geral</Link></li>
             </ul>
 
         </nav>
