@@ -3,7 +3,6 @@ import {collection, getDocs} from 'firebase/firestore'
 
 const Consult = async () =>{
 
-    await new Promise((resolve) => setTimeout(resolve, 3000));
 
     let Data = []
     
